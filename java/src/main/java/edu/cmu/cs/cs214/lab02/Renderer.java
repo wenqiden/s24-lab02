@@ -3,14 +3,14 @@ package edu.cmu.cs.cs214.lab02;
 import edu.cmu.cs.cs214.lab02.shapes.*;
 
 public class Renderer {
-    private Rectangle rectangle;
+    private Shape shape;
     
-    public Renderer(int height, int width) {
-        this.rectangle = new Rectangle(height, width);
+    public Renderer(Shape shape) {
+        this.shape = shape;
     }
 
     void draw() {
-        double area = rectangle.getArea();
+        double area = shape.getArea();
 
         // assume implementation
 
